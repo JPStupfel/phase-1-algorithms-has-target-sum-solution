@@ -1,5 +1,13 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+
+const seenNumbers = new Set()
+for (number of array)
+    {
+      const reciprocal = target - number
+      if (seenNumbers.has(reciprocal)){return true}
+      else {seenNumbers.add(number); console.log(seenNumbers)}
+    }
+return false
 }
 
 /* 
@@ -8,10 +16,23 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+create an empty object.
+
+iterate through the array.
+
+if the reciprocal of each number is in object, return true.
+
+else, add that number to the object
+
+if complete the loop, return false
+
+
 */
 
 /*
   Add written explanation of your solution here
+  input = array and integer
+  return = whether any two numbers in the array add up to the integer
 */
 
 // You can run `node index.js` to view these console logs
